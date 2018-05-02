@@ -10,4 +10,5 @@ ByteCompile: true
 RoxygenNote: 6.0.1
 Imports:
   httr,
-  rvest
+  rvest,
+  xml2
