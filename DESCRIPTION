@@ -1,10 +1,13 @@
 Package: CollarDownloadeR
 Version: 0.0.0.9000
-Title: What the Package Does (one line, title case)
-Description: What the package does (one paragraph).
-Authors@R: person("First", "Last", email = "first.last@example.com", role = c("aut", "cre"))
-License: What license is it under?
+Title: Download telemetry data from manufacturer's websites
+Description: A package for downloading data from telemetry companies websites
+Authors@R: person("Josh", "Nowak", email = "josh.nowak@speedgoat.io", role = c("aut", "cre"))
+License: GNU General Public License v3.0
 Encoding: UTF-8
 LazyData: true
 ByteCompile: true
 RoxygenNote: 6.0.1
+Imports:
+  httr,
+  rvest
