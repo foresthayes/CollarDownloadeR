@@ -2,3 +2,4 @@
 
 export(scrape_ats)
 export(scrape_celltrack)
+importFrom(magrittr,"%>%")
