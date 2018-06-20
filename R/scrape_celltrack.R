@@ -9,6 +9,8 @@
 #' @examples
 #' scrape_celltrack("my_name", "my_secret", NULL)
 #'
+#' @importFrom magrittr %>%
+#'
 #' @export
 scrape_celltrack <- function(usr, pwd, page_count = 1){
 
@@ -37,6 +39,9 @@ scrape_celltrack <- function(usr, pwd, page_count = 1){
         httr::config(referer = pgsession$url)
       )
     httr::stop_for_status(dwnld_form)
+    if(dwnld_form$url == base_url){
+      stop("Login failed, please check your credentials and try again")
+    }
 
     #  Attempt to get the number of pages, if user did not supply
     pages <- purrr::when(
