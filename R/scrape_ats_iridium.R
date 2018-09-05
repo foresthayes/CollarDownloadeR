@@ -11,7 +11,7 @@
 #' @export
 #'
 #' @examples scrape_ats(usr = "my_username", pwd = "secret_code")
-scrape_ats <- function(bttn_nm = NULL, usr = NULL, pwd = NULL){
+scrape_ats_iridium <- function(bttn_nm = NULL, usr = NULL, pwd = NULL){
 
   if(is.null(bttn_nm)){
     warning("Button name NULL, downloading all data")
