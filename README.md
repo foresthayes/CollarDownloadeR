@@ -38,18 +38,11 @@ Thankfully Vectronics is quite forward thinking when it comes to data access.  T
 Two optional parameters, which are as of yet untested, allow the user to only download data after some data id or date.  This should be helpful for those doing weekly downloads as it will not require the user to download every fix each time they retrieve data.
 
 ```R
-#  Get collar IDs
-ids <- cdr_get_id_from_key(
-  system.file("extdata", package = "CollarDownloadeR")
-)
+#  Get collar IDs - fake directory inserted to show call
+ids <- cdr_get_id_from_key("C:/Temp/vec_keys")
 
 #  Get collar keys
-keys <- cdr_get_keys(
-  system.file(
-    "extdata",
-    package = "CollarDownloadeR"
-  )
-)
+keys <- cdr_get_keys("C:/Temp/vec_keys")
 
 #  Build url from base url, collar IDs, collar keys and data type
 url <- cdr_build_vec_urls(
