@@ -1,12 +1,13 @@
 Package: CollarDownloadeR
 Version: 0.0.1
 Title: Automate downloading of telemetry data from manufacturer's websites
-Description: At the time of this writing no telemetry "collar" manufacturer has 
-    and easy to use API to automate the downloading of data.  To fixe this 
-    problem we created this package to collect functions that leverage web 
-    scraping to download data.  The interface is meant to be simple and 
-    consistent.  The package requires that you have your own username and 
-    password for the website you are attempting to contact.
+Description: Telemetry collars make it easy to collect large quantities of data,
+    but it can be difficult and time consuming to retrieve this data from 
+    website interfaces.  This package is a collection of functions to help users
+    automate data retrieval.  For those companies with established APIs the user
+    can query data stores directly and for those companies with websites or 
+    other more difficult means of distributing data web scraping and related 
+    techniques are used to help ease data retrieval.
 Authors@R: c(
     person("Josh", "Nowak", , "josh.nowak@speedgoat.io", role = c("aut", "cre"))
     )
@@ -25,7 +26,6 @@ License: GPL-3
 Encoding: UTF-8
 LazyData: true
 ByteCompile: true
-RoxygenNote: 6.0.1
+RoxygenNote: 6.1.0
 URL: https::/github.com/Huh/CollarDownloadeR
 BugReports: https://github.com/Huh/CollarDownloadeR/issues
-
